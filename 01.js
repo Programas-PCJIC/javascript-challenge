@@ -14,9 +14,22 @@ function menorMayor(numeros) {
   // y 15 es el número más grande (mayor) dentro del arreglo [4, 6, 1, 7, 15]
 
   // Tu código aca:
-  
+  console.table(numeros);
+  let resultado = [0,0];
+  let mayor = numeros[0];
+  let menor = numeros[0];
+  for (let index = 1; index < numeros.length; index++) {
+    if(numeros[index] < menor){
+      menor = numeros[index];
+    }else if(numeros[index] > mayor){
+      mayor = numeros[index]
+    }
+  }
+  resultado[0] = menor;
+  resultado[1] = mayor;
+  console.table(resultado);
+  return resultado;
 }
-
 // No modifiques nada debajo de esta linea //
 
 module.exports = menorMayor
