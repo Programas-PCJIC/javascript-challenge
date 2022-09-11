@@ -1,7 +1,7 @@
 {
-  "name": "henrychallenge",
+  "name": "js-challenge",
   "version": "1.0.0",
-  "description": "Challenge para ingresar en Henry",
+  "description": "Challenge TLP2",
   "main": "checkpoint.js",
   "directories": {
     "test": "tests"
