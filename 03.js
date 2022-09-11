@@ -14,7 +14,28 @@ function divisores(numero) {
   // divisores(11) devuelve 'Es primo'
 
   // Tu código aca:
-  console.log("Este es mi reto 3")
+  let numeros = [];
+  let esPrimo = true;
+
+  for (let x = 2; x < numero / 2; x++) {
+    if (numero % x == 0) {
+      for (let i = 0; i < numero; i++) {
+        if (numero % i === 0) {
+          esPrimo = false;
+        }
+      }
+    }
+  }
+  if (!esPrimo) {
+    for (i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        numeros.push(parseInt(i));
+      }
+    }
+    return numeros;
+  } else {
+    return 'Es primo'
+  }
 }
 // No modifiques nada debajo de esta linea //
 module.exports = divisores

@@ -31,7 +31,15 @@ function cuantosOnline(usuarios) {
   // Tip: Podes usar el metodo for...in
 
   // Tu código aca:
-  console.log("Estoy en mi reto 02")
+  let cantidadUsuariosOnline = 0;
+  
+  for(const [key, value] of Object.entries(usuarios)){
+    if (value.online === true){
+      cantidadUsuariosOnline = cantidadUsuariosOnline + 1;
+    }
+  }
+  
+  return cantidadUsuariosOnline;
 }
 
 

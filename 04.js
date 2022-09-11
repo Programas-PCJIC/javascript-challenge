@@ -12,7 +12,15 @@ function actividadesEnComun(persona1, persona2) {
   // actividadesEnComun(persona1, persona2) => ['comer', 'dormir']
   // Tip: podes usar ciclos for anidados.
   // Tu código aca:
-
+  let iguales = [];
+  for(let i = 0; i < persona1.length; i++){
+    for(let j = 0; j < persona2.length; j++){
+      if(persona1[i] === persona2[j]){
+        iguales.push(persona1[i])
+      }
+    }
+  }
+  return iguales;
 }
 
 // No modifiques nada debajo de esta linea //
